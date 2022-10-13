@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# react-web-components
+React app with a web component defined.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

@@ -3,7 +3,7 @@
 Using Web Components in different Cross UI frontend frameworks
 
 
-### Repo showcases
+#### Repo showcases
 - Using Web Components in different Cross UI frontend frameworks
 - Using React Web Componnets within React
 - Using React components in a ember app
@@ -15,8 +15,8 @@ Using Web Components in different Cross UI frontend frameworks
 
 The application consists of 2 different frontends
 
--   [react-web-components](https://github.com) - React Web Components
--   [frontend-ember](https://github.com/sarat9/) - Basic Frontend Ember.js App uses web components of React
+-   [react-web-components](https://github.com/sarat9/cross-ui-web-comp/tree/master/react-web-components) - React Web Components
+-   [frontend-ember](https://github.com/sarat9/cross-ui-web-comp/tree/master/frontend-ember) - Basic Frontend Ember.js App uses web components of React
 
 In the above code, **react-web-components** has a web component called *FancyButton* which is written in React.js. We will be bundling the component and will import and use it in different frameworks like Ember.
 
@@ -29,18 +29,16 @@ In the above code, **react-web-components** has a web component called *FancyBut
 
 # Web Components
 
-**Web Components** have been growing, 
-
 > “Good frontend development is hard. Scaling frontend development so that many teams can work simultaneously on a large and complex product is even harder.” Martin Fowler
 
 
-# Problem
+### Problem
 At the beginning of a project you always pick a framework and you build your entire project around it.
 - What if you want to migrate your app to a latest tech?
 - What if you want to use a latest tech component in your traditiona app?
 - What if you want to integrate any apps together for a shared responsibility? 
 
-**What is a Web Component?**
+### What is a Web Component?
 The core concept of a Web Component is similar to that of components in frameworks such as React, Angular or Vue. 
 It is a reusable UI building block that encapsulates all the HTML, CSS and any JavaScript-based logic required to render it. 
 
@@ -55,7 +53,8 @@ Custom components and widgets build on the Web Component standards, will work ac
 - [Why I’m Betting on Web Components (and You Should Think About Using Them Too)](https://gilfink.medium.com/why-im-betting-on-web-components-and-you-should-think-about-using-them-too-8629396e27a)
 
 ##
-**Why Web Component?**
+
+### Why Web Component?**
 
 - Web Components can be used with any JavaScript library or framework that works with HTML.
 - Functionality encapsulated away from the rest of your code.
@@ -70,7 +69,7 @@ Custom components and widgets build on the Web Component standards, will work ac
 
 ##
 
-# Libraries for building web components
+#### Libraries for building web components
 Many libraries already exist that make it easier to build native web components
 - Polymer provides a set of features for creating custom elements.
 - Slim.js provides data-binding and extended capabilities for components, using es6 native class inheritance.
@@ -82,14 +81,27 @@ Many libraries already exist that make it easier to build native web components
 ##
 
 
+# Bundle specific component
+use this to bundle specific web component and import that bundled file in other frameworks.
+```
+npm i parcel
+parcel build path/component.js
+```
+
+##
+
+### Libraries used
+- [reactToWebComponent - Github](https://github.com/bitovi/react-to-webcomponent)
+
+
 ##
 
 # Src and Ref:
 
-## React Web components
+### React Web components
 - [React Docs - Using Web Components in React](https://reactjs.org/docs/web-components.html)
 
-## Web Components
+### Web Components
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 - [webcomponents.org](https://www.webcomponents.org/introduction#specifications)
 - [Everything You Need to Know About Web Components](https://medium.com/rangle-io/everything-you-need-to-know-about-web-components-part-1-ced95964fbe6)
@@ -97,28 +109,22 @@ Many libraries already exist that make it easier to build native web components
 - [The Story of Web Components - Youtube](https://www.youtube.com/watch?v=fKqgdT-KLrM)
 - [Introduction to Web Components](https://medium.com/sciforce/introduction-to-web-components-84e6507382fc)
 - [Web Components Basics and Performance Benefits](https://medium.com/@spkamboj/web-components-basics-and-performance-benefits-f7537c908075)
+- [Shadow DOM](https://www.youtube.com/watch?v=K5i9zMzVlzM)
 
-## Implementing Web Components
+
+
+### Implementing Web Components
 - [How to: Create a web component in ReactJS](https://medium.com/javascript-by-doing/how-to-create-a-web-component-in-reactjs-62b71116ea36)
 - 
 
-# Build Webcomponents using reactToWebComponent
+### Build Webcomponents using reactToWebComponent
 - [reactToWebComponent - Github](https://github.com/bitovi/react-to-webcomponent)
 - [reactToWebComponent - Sandbox Code](https://codesandbox.io/s/react-to-webcomponent--basic-vqs8cl)
 - [reactToWebComponent - YouTube](https://www.youtube.com/watch?v=PUGDzA1uP-Y)
 
-# Libraries used
-- [reactToWebComponent - Github](https://github.com/bitovi/react-to-webcomponent)
-
-# Build Webcomponents using plain javascript wrapping
+### Build Webcomponents using plain javascript wrapping
 - [Wrapping React Components Inside Custom Elements](https://gilfink.medium.com/wrapping-react-components-inside-custom-elements-97431d1155bd)
 
 
+##
 
-
-# Bundle specific component
-use this to bundle specific web component and import that bundled file in other frameworks.
-```
-npm i parcel
-parcel build path/component.js
-```
