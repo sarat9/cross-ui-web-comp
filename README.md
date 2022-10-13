@@ -128,3 +128,15 @@ parcel build path/component.js
 
 ##
 
+# Demo
+
+#### React app with fancy button web component
+<img src="https://user-images.githubusercontent.com/17333491/195664468-f5e30032-be0e-4aa8-ad65-ceed3322b5e0.png" width="750" height="450">
+
+#### Ember app consuming the React web component
+
+<img src="https://user-images.githubusercontent.com/17333491/195664561-0d44a18f-67bc-4bc2-86a6-df336779a71d.png" width="750" height="450">
+
+
+
+
