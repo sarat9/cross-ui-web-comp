@@ -39,3 +39,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 - https://discuss.emberjs.com/t/what-is-the-best-practice-of-micro-frontend-on-emberjs/17800/7
 
 
+
+#### Using React in ember Directly
+- https://jhinter.medium.com/react-inside-emberjs-extend-your-legacy-front-end-using-react-based-web-components-9c90e3a4a1b5
+- https://medium.com/front-end-weekly/using-react-components-in-your-ember-app-8f7805d409b0
+- https://dev.to/sivakumar_kailasam/using-react-components-in-your-ember-app-41m9
+- https://stackoverflow.com/questions/53323418/using-react-js-inside-an-ember-project-and-importing-a-library-using-import-from

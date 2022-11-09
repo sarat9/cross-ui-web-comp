@@ -5,6 +5,11 @@ import './App.css';
 import "./web-components/FancyButtonWC.js"
 
 function App() {
+
+  function parentFunction (e){
+    e.preventDefault();
+    console.log("Called Parent Framework Function")
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -13,7 +18,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <br/>
-        <fancy-button></fancy-button>
+        <fancy-button parentvalue={"Hello from React"} parentfunction={parentFunction}></fancy-button>
       </header>
     </div>
   );
