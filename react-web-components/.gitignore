@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+# parcel
+.parcel-cache
+
 # testing
 /coverage
 

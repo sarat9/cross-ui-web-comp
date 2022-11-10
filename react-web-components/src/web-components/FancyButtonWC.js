@@ -10,14 +10,14 @@ function FancyButtonWC(props) {
 
     const { parentvalue, parentfunction } = props
     console.log('props', props)
-    console.log('parentValue', parentvalue)
-
+    console.log('parentvalue', parentvalue)
     console.log("parentfunction",parentfunction)
 
     return <>
             <button 
                 style={{height:'100px', width:'120px', fontSize:"24px", background: '#00bcd4', fontWeight: 700}} 
                 type="button"
+                onClick={parentfunction}
                 >
                 Fancy Button!!! 
             </button>
@@ -28,6 +28,7 @@ function FancyButtonWC(props) {
 
 // FancyButtonWC.propTypes = {
 //     parentvalue: PropTypes.string,
+//     parentfunction: PropTypes.func,
 //   }
 // const FancyButtonWebComp = reactToWebComponent(FancyButtonWC, React, ReactDOM);
 // customElements.define("fancy-button", FancyButtonWebComp); 
@@ -35,21 +36,26 @@ function FancyButtonWC(props) {
 
 // Other ways of defining the props
 
-// customElements.define(
-//     "fancy-button",
-//     reactToWebComponent(FancyButtonWC, React, ReactDOM, {
-//       props: {
-//         parentvalue: String
-//       },
-//     }),
-//   )
+// or
 
-  customElements.define(
+customElements.define(
     "fancy-button",
     reactToWebComponent(FancyButtonWC, React, ReactDOM, {
-      props: ["parentvalue", "parentfunction"]
+      props: {
+        parentvalue: String,
+        parentfunction: Function,
+      },
     }),
   )
+
+// or 
+
+//   customElements.define(
+//     "fancy-button",
+//     reactToWebComponent(FancyButtonWC, React, ReactDOM, {
+//       props: ["parentvalue", "parentfunction"]
+//     }),
+//   )
 
 
 
@@ -57,3 +63,5 @@ function FancyButtonWC(props) {
   // Cross-check your Node version, It should be `Node 14 or above`.
   // Cross-check your `import ReactDom` statement, based on the React version you are using.
   // Update to the latest version of react-to-webcomponent and prop-types
+
+  // https://github.com/bitovi/react-to-webcomponent/blob/main/docs/api.md

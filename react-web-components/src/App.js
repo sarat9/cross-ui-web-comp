@@ -6,10 +6,17 @@ import "./web-components/FancyButtonWC.js"
 
 function App() {
 
-  function parentFunction (e){
+  function randomOtherFunction(e){
+    // Not working as it is not a global/window attached function
     e.preventDefault();
-    console.log("Called Parent Framework Function")
+    console.log("Called Parent Framework Function : React")
   }
+
+  window.randomFunction=(e)=>{
+    e.preventDefault();
+    console.log("Called Parent Framework Function : React")
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +25,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <br/>
-        <fancy-button parentvalue={"Hello from React"} parentfunction={parentFunction}></fancy-button>
+        <fancy-button parentvalue={"Hello from React"} parentfunction={'randomFunction'}></fancy-button>
       </header>
     </div>
   );
